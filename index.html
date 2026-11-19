@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Магазин</div>
+    <div class="balance" id="balance"></div>
+  </header>
+
+  <nav class="tabs">
+    <a href="#/shop" data-tab="shop">Магазин</a>
+    <a href="#/profile" data-tab="profile">Профиль</a>
+    <a href="#/topup" data-tab="topup">Пополнить</a>
+  </nav>
+
+  <main id="view"><p class="hint">Загрузка…</p></main>
+
+  <div id="modal" class="modal hidden">
+    <div class="sheet">
+      <div id="modal-body"></div>
+      <button id="modal-close" class="btn secondary">Закрыть</button>
+    </div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- Официальный SDK Telegram для мини-аппов -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
